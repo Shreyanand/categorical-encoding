@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+category-encoders = "*"
+dirty-cat = "*"
+fasttext = "*"
+insights-core = "*"
+keras = "*"
+pandas = "*"
+s3fs = "*"
+scipy = "*"
+sklearn = "*"
+lightgbm = "*"
+xgboost = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
