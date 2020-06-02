@@ -18,7 +18,7 @@ from sklearn.decomposition import PCA, LatentDirichletAllocation, NMF, \
 from sklearn.pipeline import Pipeline
 from sklearn.utils import murmurhash3_32, check_random_state
 
-from fasttext import load_model
+#from fasttext import load_model
 import category_encoders as cat_enc
 from dirty_cat import SimilarityEncoder, TargetEncoder
 from dirty_cat.similarity_encoder import get_kmeans_prototypes
@@ -724,7 +724,7 @@ class ColumnEncoder(BaseEstimator, TransformerMixin):
             'OnlineGammaPoissonFactorization':
                 gamma_poisson_factorization.OnlineGammaPoissonFactorization(
                     n_topics=self.n_components, rho=.99, r=None,
-                    tol=1e-4, random_state=18, init='k-means++',
+                    tol=1e-4, random_state=18, init='k-means',
                     ngram_range=self.ngram_range,
                     rescale_W=True, max_iter_e_step=10),
             'OnlineGammaPoissonFactorization2':
